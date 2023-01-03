@@ -35,6 +35,9 @@ with col5:
 with col6:
   st.subheader(temperature)
 
+#Add an empty row for clarity
+  st.write("")
+  
 #Data collection area
 #Set up columns
 col1, col2, col3 = st.columns(3)
