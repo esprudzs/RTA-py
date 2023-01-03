@@ -43,5 +43,8 @@ with col6:
 col1, col2, col3 = st.columns(3)
 
 with col1:
-  width = st.number_input("Specify roof area in m2")
+  south = st.number_input("Specify your total roof area facing south in m2")
+with col2:
+  north = st.number_input("Specify your total roof area facing north in m2")
+  
 
