@@ -15,11 +15,11 @@ st.title("Solar panel efficiency calculator")
 #Set up two columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
-  st.subheader("Today is ")
+  st.subheader("Today: ")
 with col2:
   st.subheader(today)
 with col4:
-  st.subheader("Out is ")
+  st.subheader("Outside: ")
   
 with col5:
   st.metric(label = "", value = "10C", delta = None)
