@@ -19,6 +19,6 @@ with col1:
 with col2:
   st.subheader(today)
 with col4:
-#  st.subheader("Outside is ")
+  st.subheader("Outside is ")
 with col5:
   st.mertic("", "10", "5", "", "", "hidden")
