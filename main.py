@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #Setup
-to_day = datetime.today()
+to_day = datetime.ctime()
 
 #Page header
 st.title("Welcome to the coolest solar panel efficiency calculator this side of Equator!")
