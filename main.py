@@ -22,4 +22,4 @@ with col4:
   st.subheader("Out is ")
   
 with col5:
-  st.metric(label = "", value = "10C", delta = "5")
+  st.metric(label = "None", value = "10C", delta = "None")
