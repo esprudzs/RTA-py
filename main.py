@@ -21,4 +21,5 @@ with col2:
 with col4:
   st.subheader("Outside is ")
   
-col5.metric(value = "10C", delta = "5")
+with col5:
+  st.metric(label = "", value = "10C", delta = "5")
