@@ -20,5 +20,5 @@ with col2:
   st.subheader(today)
 with col4:
   st.subheader("Outside is ")
-with col5:
-  st.mertic(value = "10", delta = "5")
+  
+col5.metric(value = "10C", delta = "5")
