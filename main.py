@@ -5,8 +5,8 @@ st.title("Welcome to the coolest solar panel efficiency calculator this side of 
 col1, col2 = st.columns(2)
 
 with col1:
-  st.header("Today is ")
+  st.subheader("Today is ")
 
 with col2:
-  st.header("Outside is ")
+  st.subheader("Outside is ")
   
