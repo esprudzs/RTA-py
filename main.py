@@ -24,11 +24,10 @@ temperature = GetTemp(location)
 st.title("Solar panel efficiency calculator")
 
 
-#Set up two columns
+#Set up columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
   st.subheader("Today: ")
-  width = st.number_input("Specify roof area in m2")
 with col2:
   st.subheader(today)
 with col5:
@@ -36,5 +35,10 @@ with col5:
 with col6:
   st.subheader(temperature)
 
-  
+#Data collection area
+#Set up columns
+col1, col2, col3 = st.columns(2)
+
+with col1
+  width = st.number_input("Specify roof area in m2")
 
