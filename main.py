@@ -8,7 +8,7 @@ import requests, json
 
 #Setup
 today = date.today()
-GetTemp(temperature)
+temperature = GetTemp()
 
 #Page header
 st.title("Solar panel efficiency calculator")
@@ -25,6 +25,6 @@ with col5:
 with col6:
   st.subheader(temperature)
 
-def GetTemp(temp):
+def GetTemp():
   temp = "15C"
   return temp
