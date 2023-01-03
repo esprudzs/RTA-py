@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #Setup
-class datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
+datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
 
 today = datetime.now()
 
