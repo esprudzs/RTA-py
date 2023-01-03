@@ -2,7 +2,7 @@ import streamlit as st
 
 #Page header
 st.title("Welcome to the coolest solar panel efficiency calculator this side of Equator!")
-col1, col2 = st.column(2)
+col1, col2 = st.columns(2)
 
 with col1:
   st.header("Today is ")
