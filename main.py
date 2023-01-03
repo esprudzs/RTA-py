@@ -1,12 +1,11 @@
 import streamlit as st
-from datetime import datetime
+from datetime import date
 import pandas as pd
 import numpy as np
 
 #Setup
-datetime.datetime(year, month, day)
 
-today = datetime.now()
+today = date.today()
 
 #Page header
 st.title("Welcome to the coolest solar panel efficiency calculator this side of Equator!")
