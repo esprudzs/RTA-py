@@ -6,6 +6,14 @@ import numpy as np
 #For weather
 import requests, json
 
+def GetTemp(location_str):
+  temp = "15C"
+  return temp
+
+def GetLocation():
+  pass
+
+
 #Setup
 today = date.today()
 location = GetLocation()
@@ -26,9 +34,3 @@ with col5:
 with col6:
   st.subheader(temperature)
 
-def GetTemp(location_str):
-  temp = "15C"
-  return temp
-
-def GetLocation()
-  pass
