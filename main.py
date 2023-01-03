@@ -13,7 +13,7 @@ st.title("Welcome to the coolest solar panel efficiency calculator this side of 
 col1, col2, col3 = st.columns(3)
 with col1:
   st.subheader("Today is ")
-with col2
+with col2:
   st.subheader(today)
 with col3:
   st.subheader("Outside is ")
