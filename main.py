@@ -10,7 +10,7 @@ import requests, json
 today = date.today()
 
 #Page header
-st.title("Welcome to the coolest solar panel efficiency calculator this side of Equator!")
+st.title("Solar panel efficiency calculator")
 
 #Set up two columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
@@ -23,3 +23,4 @@ with col4:
   
 with col5:
   st.metric(label = "", value = "10C", delta = None)
+
