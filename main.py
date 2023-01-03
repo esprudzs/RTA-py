@@ -4,7 +4,9 @@ import pandas as pd
 import numpy as np
 
 #Setup
-today = datetime.now(year,month,day)
+class datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)
+
+today = datetime.now()
 
 #Page header
 st.title("Welcome to the coolest solar panel efficiency calculator this side of Equator!")
