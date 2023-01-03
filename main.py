@@ -37,7 +37,7 @@ with col6:
 
 #Data collection area
 #Set up columns
-col1, col2, col3 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
   width = st.number_input("Specify roof area in m2")
