@@ -1,8 +1,4 @@
 
-import streamlit as st
+#Page header
+st.title("The coolest sun panel efficiency calculator this side of Equator")
 
-
-#Header
-st.write('Hello World!')
-st.text('This is some text')
-st.checkbox('Ček zis', value=False, label_visibility='visible')
