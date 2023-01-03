@@ -4,16 +4,15 @@ import pandas as pd
 import numpy as np
 
 #Setup
-col1, col2 = st.columns(2)     #Set up 2 columns
 today = datetime.now()
-
 
 #Page header
 st.title("Welcome to the coolest solar panel efficiency calculator this side of Equator!")
 
-
+#Set up two columns
+col1, col2 = st.columns(2)
 with col1:
-  st.subheader("Today is ")
+  st.subheader("Today is ", today.year, "-", today.month, "-", today.day)
 
 with col2:
   st.subheader("Outside is ")
