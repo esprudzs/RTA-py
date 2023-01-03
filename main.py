@@ -19,7 +19,7 @@ with col1:
 with col2:
   st.subheader(today)
 with col4:
-  st.subheader("Outside is ")
+  st.subheader("Out is ")
   
 with col5:
   st.metric(label = "", value = "10C", delta = "5")
