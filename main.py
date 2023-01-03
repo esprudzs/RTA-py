@@ -39,6 +39,6 @@ with col6:
 #Set up columns
 col1, col2, col3 = st.columns(2)
 
-with col1
+with col1:
   width = st.number_input("Specify roof area in m2")
 
