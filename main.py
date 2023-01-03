@@ -25,5 +25,6 @@ with col5:
 with col6:
   st.subheader(temperature)
 
-def GetTemp():
-  return
+def GetTemp(temp):
+  temp = "15C"
+
