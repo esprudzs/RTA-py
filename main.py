@@ -47,4 +47,4 @@ with col1:
 with col2:
   north = st.number_input("Specify your total roof area facing North in m2")
 with col3:
-  st.text("While most building are not placed along lattitude or longtitude axes, choose areas angled more towards South or North.")
+  st.text_area("While most building are not placed along lattitude or longtitude axes, choose areas angled more towards South or North.")
