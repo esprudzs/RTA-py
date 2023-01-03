@@ -11,7 +11,7 @@ today = date.today()
 base_url = "https://api.openweathermap.org/data/2.5/weather?"
 url = base_url + "q=" + "Riga" + "&appid=" + "test"
 respone = requests.get(url)
-if response.status.code == 200:
+if response.status_code == 200:
   data = response.json()
   main = data['data']
   temperature = main['temp']
