@@ -82,7 +82,7 @@ with col1:
       if northarea != 0:
         pcsonnorth = northarea // _hyndai1pcarea
         st.caption("Number of panels on N: " + str(pcsonnorth))      
-      totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
+      totalpcs = pcsonsouth# + pcsonnorth                              #add up both sides of the roof
     elif brand == "JINKO":
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
