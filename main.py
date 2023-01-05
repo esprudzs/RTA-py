@@ -92,6 +92,7 @@ with col1:
         northkW = pcsonnorth * _hyndai1pcpower
         st.caption("Number of panels on N: " + str(pcsonnorth))      
       totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
+      totalkW = southkW + northkW
     elif brand == "JINKO":
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
@@ -102,7 +103,9 @@ with col1:
         northkW = pcsonnorth * _jinko1pcpower
         st.caption("Number of panels on N: " + str(pcsonnorth)) 
       totalpcs = pcsonsouth + pcsonnorth
-    st.caption("Total number of panels: " + str(totalpcs))
+      totalkW = southkW + northkW
+    st.caption("Total number of panels: " + str(totalpcs)),
+    st.caption("Total system power: " + str(totalkW))
     
     
 
