@@ -43,7 +43,7 @@ c_efficiency = 0.9               #some generic efficiency ratio
 
 #Page header
 st.header("Solar panel income calculator")
-
+"""
 #Set up columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
@@ -123,7 +123,7 @@ with col1:
 st.header("Total income in " + str(years) + ": " + str(income) + " EUR")
 
   
-  
+"""
   
   
   
