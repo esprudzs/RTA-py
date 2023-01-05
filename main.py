@@ -107,7 +107,7 @@ with col1:
     st.caption("Total number of panels: " + str(totalpcs))
     st.caption("Total system power: " + str("%.2f" % totalkW) + "kW")
 
-  years = st.slider("Number of years for income calculation:", 1, 10)
+  #years = st.slider("Number of years for income calculation:", 1, 10)
   st.text = ('Hello World')
   
   
