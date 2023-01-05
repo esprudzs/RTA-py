@@ -100,7 +100,7 @@ with col1:
         st.caption("Number of panels on N: " + str(pcsonnorth))      
       totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
       totalkW = southkW + northkW
-    elif brand == "JINKO":
+    if brand == "JINKO":
       if southarea != 0:
         pcsonsouth = southarea // c_jinko1pcarea
         southkW = pcsonsouth * c_jinko1pcpower
