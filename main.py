@@ -27,6 +27,8 @@ totalpcs = 0
 southkW = 0
 northkW = 0
 totalkW = 0
+price = 0
+income = 0
 
 #constants
 _solarEnergyS = 1219   #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
@@ -108,3 +110,6 @@ with col1:
     st.caption("Total system power: " + str("%.2f" % totalkW) + "kW")
 
   years = st.slider("Number of years for income calculation:", 1, 10)
+  
+  col1 = st.columns(1)
+  st.title = (str(income))
