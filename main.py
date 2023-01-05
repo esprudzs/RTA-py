@@ -84,7 +84,10 @@ with col2:
       st.image("https://site-539722.mozfiles.com/files/539722/catitems/220f5a204f9ba99a58c155a0f85d-714ef5bead039c6f108b218f271002c5.jpg?4583301")
     else:                   #jinko selected, jinko image
       st.image("https://site-539722.mozfiles.com/files/539722/catitems/Jinko470-1-511f94d46e72b1fe7e62ce1c1fb6cf24.jpg?4934090")
-  
+
+#Set up columns
+col1, col2 = st.columns(2)
+
 with col1:
   if brand != "":           #do nothing for no producer selected
     if brand == "Hyndai":
