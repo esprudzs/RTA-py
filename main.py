@@ -23,6 +23,7 @@ temperature = GetTemp(location)
 pcsonsouth = 0
 pcsonnorth = 0
 totalpcs = 0
+brand = ""
 
 #constants
 _solarEnergyS = 1219   #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
@@ -93,7 +94,7 @@ with col1:
       if northarea != 0:
         pcsonnorth = northarea // _jinko1pcarea
         st.caption("Number of panels on N: " + str(pcsonnorth)) 
-      totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
+      totalpcs = pcsonsouth + pcsonnorth
     st.caption("Total number of panels: " + str(totalpcs))
     
     
