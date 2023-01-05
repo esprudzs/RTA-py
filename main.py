@@ -1,5 +1,4 @@
 import streamlit as st
-"""
 from datetime import date
 from PIL import Image
 import requests, json
@@ -41,10 +40,10 @@ c_hyndai1pcpower = 0.410         #Hyndai, 1 unit max output, kW
 c_jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
 c_jinko1pcpower = 0.470          #Jinko, 1 unit max output, kW
 c_efficiency = 0.9               #some generic efficiency ratio
-"""
+
 #Page header
 st.header("Solar panel income calculator")
-"""
+
 #Set up columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
@@ -123,8 +122,3 @@ with col1:
 
 st.header("Total income in " + str(years) + ": " + str(income) + " EUR")
 
-  
-"""
-  
-  
-  
