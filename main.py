@@ -67,7 +67,7 @@ with col1:
 with col2:
   northarea = st.number_input("Specify your total roof area facing North in" + " $$m^2$$")
 #with col3:
-#This ugly crap is not working
+#This is ugly as crap, probably can format it somehow, leaving for later
 #  st.text("While most buildings are not placed along lattitude or longtitude axes, choose areas angled more towards South or North.")
 
 #Set up columns
