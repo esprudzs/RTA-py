@@ -120,7 +120,7 @@ with col1:
   
   income = (energynorth + energysouth) * price
 
-st.header("Total income in " + str(years) + ": " str(income) + " EUR")
+st.header("Total income in " + str(years) + ": " + str(income) + " EUR")
 
   
   
