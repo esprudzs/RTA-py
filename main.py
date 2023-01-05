@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import date
 from PIL import Image
-#import requests, json
+import requests, json
 
 #For energy price
 #some cool .json
@@ -42,8 +42,6 @@ _jinko1pcpower = 0.470            #Jinko, 1 unit max output, kW
 #Set up columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
-  #Page header
-  st.header("Solar panel efficiency calculator")
   st.subheader("Today: ")
 with col2:
   st.subheader(today)
@@ -110,3 +108,11 @@ with col1:
     st.caption("Total system power: " + str("%.2f" % totalkW) + "kW")
 
   years = st.slider("Number of years for income calculation:", 1, 10)
+  st.text = ('Hello World')
+  
+  
+  
+  
+  
+  
+  
