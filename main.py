@@ -78,8 +78,8 @@ with col1:
     if brand == "Hyndai":
       if southarea != 0:
         pcsonsouth = st.caption("Number of panels on S: " + str(southarea // _hyndai1pcarea))
-  #      pcsonnorth = st.caption("Number of panels on N: " + str(northarea // hyndai1pcarea))
-  #      totalpcs = st.caption("Total number of panels: " + str(pcsonsouth + pcsonnorth))
+        pcsonnorth = st.caption("Number of panels on N: " + str(northarea // _hyndai1pcarea))
+        totalpcs = st.caption("Total number of panels: " + str(pcsonsouth + pcsonnorth))
 
       
       
