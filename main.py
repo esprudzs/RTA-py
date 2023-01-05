@@ -109,13 +109,7 @@ with col1:
 
   years = st.slider("Number of years for income calculation:", 1, 10)
 
-st.write = ("")
-with col2:
-  st.caption = ('Hello World')
 
-  
-  
-  
   
   
   
