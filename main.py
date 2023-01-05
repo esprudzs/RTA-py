@@ -1,12 +1,10 @@
 import streamlit as st
 from datetime import date
 from PIL import Image
+import requests, json
 
 #For energy price
-prices_bas = elbas.Prices()
-
-#For weather
-import requests, json
+#some cool .json
 
 #some .json magic here
 def GetTemp(location_str):
