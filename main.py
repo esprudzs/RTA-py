@@ -67,14 +67,14 @@ with col1:
   brand = st.selectbox("Specify solar panel producer", ("", "Hyndai", "JINKO"))
   
 with col2:
-  if brand != "":
-    if brand == "Hyndai":
+  if brand != "":           #nothing selected, no image
+    if brand == "Hyndai":   #hyndai selected, hyndai panel image
       st.image("https://site-539722.mozfiles.com/files/539722/catitems/220f5a204f9ba99a58c155a0f85d-714ef5bead039c6f108b218f271002c5.jpg?4583301")
-    else:
+    else:                   #jinko selected, jinko image
       st.image("https://site-539722.mozfiles.com/files/539722/catitems/Jinko470-1-511f94d46e72b1fe7e62ce1c1fb6cf24.jpg?4934090")
   
 with col1:
-  if brand != "":
+  while brand != "":
     if brand == "Hyndai":
       if southarea != 0:
         pcsonsouth = southarea // _hyndai1pcarea
@@ -91,7 +91,9 @@ with col1:
         pcsonnorth = northarea // _jinko1pcarea
         st.caption("Number of panels on N: " + str(pcsonnorth))
     totalpcs = pcsonsouth + pcsonnorth
-    st.caption("Total number of panels: " + str(totalpcs))# + pcsonnorth))
+    st.caption("Total number of panels: " + str(totalpcs))
+    
+    
 
       
       
