@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import date
 from PIL import Image
-import requests, json
+#import requests, json
 
 #For energy price
 #some cool .json
