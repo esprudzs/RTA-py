@@ -42,6 +42,8 @@ st.header("Solar panel efficiency calculator")
 #Set up columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 with col1:
+  #Page header
+  st.header("Solar panel efficiency calculator")
   st.subheader("Today: ")
 with col2:
   st.subheader(today)
