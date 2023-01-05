@@ -16,13 +16,17 @@ def GetLocation():
   pass
 
 #Setup
+#variables
 today = date.today()
 location = GetLocation()
 temperature = GetTemp(location)
 
+#constants
+_solarEnergyS = 1219   #expected solar energy, kWh/m2 per year, facing South
+_solarEnergyN = 554    #expected solar energy, kWh/m2 per year, facing North
+
 #Page header
 st.header("Solar panel efficiency calculator")
-
 
 #Set up columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
@@ -50,8 +54,7 @@ with col2:
 #This ugly crap is not working
 #  st.text("While most building are not placed along lattitude or longtitude axes, choose areas angled more towards South or North.")
   
-  
-
-  
+with col1:
+  totarea = st.caption("Total area: " & str(south + north) & $m^2$)
   
   
