@@ -55,6 +55,6 @@ with col2:
 #  st.text("While most buildings are not placed along lattitude or longtitude axes, choose areas angled more towards South or North.")
   
 with col1:
-  totarea = st.caption("Total area: " + str(south + north) + $$m^2$$)
+  totarea = st.caption("Total area: " + str(south + north) + " $$m^2$$")
   
   
