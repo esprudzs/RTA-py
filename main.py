@@ -20,6 +20,9 @@ def GetLocation():
 today = date.today()
 location = GetLocation()
 temperature = GetTemp(location)
+pcsonsouth = 0
+pcsonnorth = 0
+totalpcs = 0
 
 #constants
 _solarEnergyS = 1219   #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
@@ -82,7 +85,7 @@ with col1:
       if northarea != 0:
         pcsonnorth = northarea // _hyndai1pcarea
         st.caption("Number of panels on N: " + str(pcsonnorth))      
-      totalpcs = 0#pcsonsouth + pcsonnorth                              #add up both sides of the roof
+      totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
     elif brand == "JINKO":
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
