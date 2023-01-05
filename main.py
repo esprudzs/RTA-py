@@ -118,11 +118,8 @@ with col1:
 
   years = st.slider("Number of years for income calculation:", 1, 10)
   
-#Set up columns
-col1, col2 = st.columns(2)
-
 with col1:
-  income = (energynorth + energysouth)
+  income = (energynorth + energysouth) * price
   st.title = (str(income))
   
 
