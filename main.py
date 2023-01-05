@@ -74,7 +74,7 @@ with col2:
       st.image("https://site-539722.mozfiles.com/files/539722/catitems/Jinko470-1-511f94d46e72b1fe7e62ce1c1fb6cf24.jpg?4934090")
   
 with col1:
-  while brand != "":
+  if brand != "":
     if brand == "Hyndai":
       if southarea != 0:
         pcsonsouth = southarea // _hyndai1pcarea
