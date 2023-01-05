@@ -63,7 +63,7 @@ with col2:
 col1, col2 = st.columns(2)
 
 with col1:
-  totarea = st.caption("Total area: " + str(south + north) + " $$m^2$$")
+  totarea = st.caption("Total area: " + str(southarea + northarea) + " $$m^2$$")
   brand = st.selectbox("Specify solar panel producer", ("", "Hyndai", "JINKO"))
   
 with col2:
