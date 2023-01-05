@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import date
-from PIL import image
+from PIL import Image
 import pandas as pd
 import numpy as np
 
