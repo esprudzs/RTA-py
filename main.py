@@ -7,13 +7,13 @@ import requests, json
 #some cool .json
 
 #some .json magic here
-#def GetTemp(location_str):
-#  temp = "15C"
-#  return temp
+def GetTemp(location_str):
+  temp = "15C"
+  return temp
 
 #more .json magic here
-#def GetLocation():
-#  pass
+def GetLocation():
+  pass
 
 #Setup
 #variables
