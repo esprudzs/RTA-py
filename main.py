@@ -90,7 +90,7 @@ with col1:
       if northarea != 0:
         pcsonnorth = northarea // _jinko1pcarea
         st.caption("Number of panels on N: " + str(pcsonnorth))
-    totalpcs = pcsonsouth    
+    totalpcs = pcsonsouth + pcsonnorth
     st.caption("Total number of panels: " + str(totalpcs))# + pcsonnorth))
 
       
