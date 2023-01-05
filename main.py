@@ -1,8 +1,9 @@
 import streamlit as st
 from datetime import date
 from PIL import Image
-import pandas as pd
-import numpy as np
+
+#For energy price
+prices_bas = elbas.Prices()
 
 #For weather
 import requests, json
@@ -92,7 +93,7 @@ with col1:
         pcsonnorth = northarea // _jinko1pcarea
         st.caption("Number of panels on N: " + str(pcsonnorth))
         
-    st.caption("Total number of panels: ")# + str(pcsonsouth + pcsonnorth))
+    st.caption("Total number of panels: ") + str(pcsonsouth))# + pcsonnorth))
 
       
       
