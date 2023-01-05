@@ -56,7 +56,7 @@ with col2:
   
 with col1:
   totarea = st.caption("Total area: " + str(south + north) + " $$m^2$$")
-  brand = st.multiselect("Specify solar panel producer", ["Hyndai", "JINKO"]
+  brand = st.selectbox("Specify solar panel producer", ("Hyndai", "JINKO"))
 
   
   
