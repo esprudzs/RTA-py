@@ -76,6 +76,12 @@ with col2:
 with col1:
   if brand != "":
     if brand == "Hyndai":
-      pcsonsouth = st.caption("Number of panels on S: " + str(southarea // hyndai1pcarea))
-      pcsonnorth = st.caption("Number of panels on N: " + str(northarea // hyndai1pcarea))
-      totalpcs = st.caption("Total number of panels: " + str(pcsonsouth + pcsonnorth))
+      pcsonsouth = st.caption("Number of panels on S: ")# + str(southarea // hyndai1pcarea))
+#      pcsonnorth = st.caption("Number of panels on N: " + str(northarea // hyndai1pcarea))
+#      totalpcs = st.caption("Total number of panels: " + str(pcsonsouth + pcsonnorth))
+
+      
+      
+      
+      
+      
