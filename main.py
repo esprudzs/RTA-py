@@ -81,20 +81,16 @@ with col1:
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _hyndai1pcarea
-        st.caption("Number of panels on N: " + str(pcsonnorth))
-        
-  totalpcs = int(pcsonsouth) + int(pcsonnorth)                              #add up both sides of the roof
-
+        st.caption("Number of panels on N: " + str(pcsonnorth))      
+      totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
     elif brand == "JINKO":
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _jinko1pcarea
-        st.caption("Number of panels on N: " + str(pcsonnorth))
-        
+        st.caption("Number of panels on N: " + str(pcsonnorth)) 
       totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
-      
     st.caption("Total number of panels: " + str(totalpcs))
     
     
