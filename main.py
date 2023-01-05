@@ -105,10 +105,10 @@ with col1:
       totalpcs = pcsonsouth + pcsonnorth
       totalkW = southkW + northkW
     st.caption("Total number of panels: " + str(totalpcs))
-    st.caption("Total system power: " + str(float(totalkW,2)))
+    st.caption("Total system power: " + str("%.2f" % totalkW))
     
     
-
+#"%.2f" % a
       
       
       
