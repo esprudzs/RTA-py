@@ -123,7 +123,7 @@ with col1:
   
  # income = (energynorth + energysouth) * price
 
-st.text = ("hello")
+st.write = ("hello")
   
 
   
