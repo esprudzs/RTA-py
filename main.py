@@ -63,7 +63,7 @@ with col2:
 col1, col2 = st.columns(2)
 
 with col1:
-  totarea = st.caption("Total area: " + str(southarea + northarea) + " $$m^2$$")
+  st.caption("Total area: " + str(totarea = southarea + northarea) + " $$m^2$$")
   brand = st.selectbox("Specify solar panel producer", ("", "Hyndai", "JINKO"))
   
 with col2:
@@ -77,9 +77,11 @@ with col1:
   if brand != "":
     if brand == "Hyndai":
       if southarea != 0:
-        pcsonsouth = st.caption("Number of panels on S: " + str(southarea // _hyndai1pcarea))
-        pcsonnorth = st.caption("Number of panels on N: " + str(northarea // _hyndai1pcarea))
-        totalpcs = st.caption("Total number of panels: " + str(pcsonsouth + pcsonnorth))
+        st.caption("Number of panels on S: " + str(pcsonsouth = southarea // _hyndai1pcarea))
+      if northarea != 0:
+        st.caption("Number of panels on N: " + str(pcsonnorth = northarea // _hyndai1pcarea))
+        
+      st.caption("Total number of panels: " + str(totalpcs = pcsonsouth + pcsonnorth))
 
       
       
