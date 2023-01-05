@@ -37,7 +37,7 @@ _jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
 _jinko1pcpower = 0.470            #Jinko, 1 unit max output, kW
 
 #Page header
-#st.header("Solar panel efficiency calculator")
+st.header("Solar panel efficiency calculator")
 
 #Set up columns
 col1, col2, col3, col4, col5, col6 = st.columns(6)
@@ -51,7 +51,7 @@ with col6:
   st.subheader(temperature)
 
 #Add an empty row for clarity
-#  st.write("")
+  st.write("")
   
 #Data collection area
 #Set up columns
@@ -108,10 +108,3 @@ with col1:
     st.caption("Total system power: " + str("%.2f" % totalkW) + "kW")
 
   years = st.slider("Number of years for income calculation:", 1, 10)
-
-
-  
-  
-  
-  
-  
