@@ -104,7 +104,7 @@ with col1:
         st.caption("Number of panels on N: " + str(pcsonnorth)) 
       totalpcs = pcsonsouth + pcsonnorth
       totalkW = southkW + northkW
-    st.caption("Total number of panels: " + str(totalpcs)),
+    st.caption("Total number of panels: " + str(totalpcs))
     st.caption("Total system power: " + str(totalkW))
     
     
