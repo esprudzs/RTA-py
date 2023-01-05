@@ -112,7 +112,7 @@ with col1:
   years = st.slider("Number of years for income calculation:", 1, 10)
   
 #Set up columns
-col1 = st.columns(1)
+col1, col2 = st.columns(2)
 
 with col1:
   st.title = (str(income))
