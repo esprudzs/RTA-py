@@ -85,7 +85,7 @@ with col1:
         
   totalpcs = int(pcsonsouth) + int(pcsonnorth)                              #add up both sides of the roof
 
-    if brand == "JINKO":
+    elif brand == "JINKO":
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
         st.caption("Number of panels on S: " + str(pcsonsouth))
