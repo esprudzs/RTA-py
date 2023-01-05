@@ -20,18 +20,21 @@ def GetLocation():
 today = date.today()
 location = GetLocation()
 temperature = GetTemp(location)
+brand = ""
 pcsonsouth = 0
 pcsonnorth = 0
 totalpcs = 0
-brand = ""
+southkW = 0
+northkW = 0
+totalkW = 0
 
 #constants
 _solarEnergyS = 1219   #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
 _solarEnergyN = 554    #expected solar energy, kWh/m2 per year, facing North, globalsolaratlas.info for Riga
 _hyndai1pcarea = 1.719 * 1.140  #Hyndai, 1 unit area, m2
-_hyndai1pcpower = 410           #Hyndai, 1 unit max output, W
+_hyndai1pcpower = 0.410           #Hyndai, 1 unit max output, kW
 _jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
-_jinko1pcpower = 470            #Jinko, 1 unit max output, W
+_jinko1pcpower = 0.470            #Jinko, 1 unit max output, kW
 
 #Page header
 st.header("Solar panel efficiency calculator")
@@ -82,17 +85,21 @@ with col1:
     if brand == "Hyndai":
       if southarea != 0:
         pcsonsouth = southarea // _hyndai1pcarea                    #calculate how many pieces will fit in the area
+        southkW = pcsonsouth * _hyndai1pcpower
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _hyndai1pcarea
+        northkW = pcsonnorth * _hyndai1pcpower
         st.caption("Number of panels on N: " + str(pcsonnorth))      
       totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
     elif brand == "JINKO":
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
+        southkW = pcsonsouth * _jinko1pcpower
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _jinko1pcarea
+        northkW = pcsonnorth * _jinko1pcpower
         st.caption("Number of panels on N: " + str(pcsonnorth)) 
       totalpcs = pcsonsouth + pcsonnorth
     st.caption("Total number of panels: " + str(totalpcs))
