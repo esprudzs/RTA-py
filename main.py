@@ -39,7 +39,7 @@ _hyndai1pcarea = 1.719 * 1.140  #Hyndai, 1 unit area, m2
 _hyndai1pcpower = 0.410         #Hyndai, 1 unit max output, kW
 _jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
 _jinko1pcpower = 0.470          #Jinko, 1 unit max output, kW
-#_eff = 0.9                      #some generic efficiency ratio
+_efficiency = 0.9               #some generic efficiency ratio
 
 #Page header
 st.header("Solar panel efficiency calculator")
