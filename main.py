@@ -27,16 +27,19 @@ totalpcs = 0
 southkW = 0
 northkW = 0
 totalkW = 0
+energysouth = 0
+energynorth = 0
 price = 0
 income = 0
 
 #constants
-_solarEnergyS = 1219   #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
-_solarEnergyN = 554    #expected solar energy, kWh/m2 per year, facing North, globalsolaratlas.info for Riga
+_solarenergyS = 1219   #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
+_solarenergyN = 554    #expected solar energy, kWh/m2 per year, facing North, globalsolaratlas.info for Riga
 _hyndai1pcarea = 1.719 * 1.140  #Hyndai, 1 unit area, m2
-_hyndai1pcpower = 0.410           #Hyndai, 1 unit max output, kW
+_hyndai1pcpower = 0.410         #Hyndai, 1 unit max output, kW
 _jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
-_jinko1pcpower = 0.470            #Jinko, 1 unit max output, kW
+_jinko1pcpower = 0.470          #Jinko, 1 unit max output, kW
+_efficiency = 0.9               #some generic efficiency ratio
 
 #Page header
 st.header("Solar panel efficiency calculator")
@@ -88,10 +91,12 @@ with col1:
       if southarea != 0:
         pcsonsouth = southarea // _hyndai1pcarea                    #calculate how many pieces will fit in the area
         southkW = pcsonsouth * _hyndai1pcpower
+        energym2south = pcsonsouth * _hyndai1pcarea * _solarenegyS
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _hyndai1pcarea
         northkW = pcsonnorth * _hyndai1pcpower
+        energym2north = pcsonnorth * _hyndai1pcarea * _solarenegyN
         st.caption("Number of panels on N: " + str(pcsonnorth))      
       totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
       totalkW = southkW + northkW
@@ -99,10 +104,12 @@ with col1:
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
         southkW = pcsonsouth * _jinko1pcpower
+        energysouth = pcsonsouth * _jinko1pcarea * _solarenegyS
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _jinko1pcarea
         northkW = pcsonnorth * _jinko1pcpower
+        energynorth = pcsonnorth * _jinko1pcarea * _solarenegyN
         st.caption("Number of panels on N: " + str(pcsonnorth)) 
       totalpcs = pcsonsouth + pcsonnorth
       totalkW = southkW + northkW
@@ -115,6 +122,7 @@ with col1:
 col1, col2 = st.columns(2)
 
 with col1:
+  income = (energynorth + energysouth)
   st.title = (str(income))
   
 
