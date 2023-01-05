@@ -7,13 +7,13 @@ import requests, json
 #some cool .json
 
 #some .json magic here
-def GetTemp(location_str):
-  temp = "15C"
-  return temp
+#def GetTemp(location_str):
+#  temp = "15C"
+#  return temp
 
 #more .json magic here
-def GetLocation():
-  pass
+#def GetLocation():
+#  pass
 
 #Setup
 #variables
@@ -27,10 +27,10 @@ totalpcs = 0
 southkW = 0
 northkW = 0
 totalkW = 0
-#energysouth = 0
-#energynorth = 0
-#price = 0
-#income = 0
+energysouth = 0
+energynorth = 0
+price = 0
+income = 0
 
 #constants
 _solarenergyS = 1219            #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
@@ -39,7 +39,7 @@ _hyndai1pcarea = 1.719 * 1.140  #Hyndai, 1 unit area, m2
 _hyndai1pcpower = 0.410         #Hyndai, 1 unit max output, kW
 _jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
 _jinko1pcpower = 0.470          #Jinko, 1 unit max output, kW
-#_efficiency = 0.9               #some generic efficiency ratio
+_efficiency = 0.9               #some generic efficiency ratio
 
 #Page header
 st.header("Solar panel income calculator")
@@ -116,7 +116,7 @@ with col1:
     st.caption("Total number of panels: " + str(totalpcs))
     st.caption("Total system power: " + str("%.2f" % totalkW) + "kW")
 
-  years = st.slider("Number of years for income calculation:", 1, 10)
+#  years = st.slider("Number of years for income calculation:", 1, 10)
   
  # income = (energynorth + energysouth) * price
   
