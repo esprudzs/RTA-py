@@ -33,13 +33,13 @@ price = 0
 income = 0
 
 #constants
-_solarenergyS = 1219            #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
-_solarenergyN = 554             #expected solar energy, kWh/m2 per year, facing North, globalsolaratlas.info for Riga
-_hyndai1pcarea = 1.719 * 1.140  #Hyndai, 1 unit area, m2
-_hyndai1pcpower = 0.410         #Hyndai, 1 unit max output, kW
-_jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
-_jinko1pcpower = 0.470          #Jinko, 1 unit max output, kW
-_efficiency = 0.9               #some generic efficiency ratio
+c_solarenergyS = 1219            #expected solar energy, kWh/m2 per year, facing South, globalsolaratlas.info for Riga
+c_solarenergyN = 554             #expected solar energy, kWh/m2 per year, facing North, globalsolaratlas.info for Riga
+c_hyndai1pcarea = 1.719 * 1.140  #Hyndai, 1 unit area, m2
+c_hyndai1pcpower = 0.410         #Hyndai, 1 unit max output, kW
+c_jinko1pcarea = 1.903 * 1.134   #Jinko, 1 unit area, m2
+c_jinko1pcpower = 0.470          #Jinko, 1 unit max output, kW
+c_efficiency = 0.9               #some generic efficiency ratio
 
 #Page header
 st.header("Solar panel income calculator")
@@ -89,27 +89,27 @@ with col1:
   if brand != "":           #do nothing for no producer selected
     if brand == "Hyndai":
       if southarea != 0:
-        pcsonsouth = southarea // _hyndai1pcarea                    #calculate how many pieces will fit in the area
-        southkW = pcsonsouth * _hyndai1pcpower
-        energysouth = pcsonsouth * _hyndai1pcarea * _solarenergyS
+        pcsonsouth = southarea // c_hyndai1pcarea                    #calculate how many pieces will fit in the area
+        southkW = pcsonsouth * c_hyndai1pcpower
+        energysouth = pcsonsouth * c_hyndai1pcarea * c_solarenergyS
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
-        pcsonnorth = northarea // _hyndai1pcarea
-        northkW = pcsonnorth * _hyndai1pcpower
-        energynorth = pcsonnorth * _hyndai1pcarea * _solarenergyN
+        pcsonnorth = northarea // c_hyndai1pcarea
+        northkW = pcsonnorth * c_hyndai1pcpower
+        energynorth = pcsonnorth * c_hyndai1pcarea * c_solarenergyN
         st.caption("Number of panels on N: " + str(pcsonnorth))      
       totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
       totalkW = southkW + northkW
     elif brand == "JINKO":
       if southarea != 0:
-        pcsonsouth = southarea // _jinko1pcarea
-        southkW = pcsonsouth * _jinko1pcpower
-        energysouth = pcsonsouth * _jinko1pcarea * _solarenergyS
+        pcsonsouth = southarea // c_jinko1pcarea
+        southkW = pcsonsouth * c_jinko1pcpower
+        energysouth = pcsonsouth * c_jinko1pcarea * c_solarenergyS
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
-        pcsonnorth = northarea // _jinko1pcarea
-        northkW = pcsonnorth * _jinko1pcpower
-        energynorth = pcsonnorth * _jinko1pcarea * _solarenergyN
+        pcsonnorth = northarea // c_jinko1pcarea
+        northkW = pcsonnorth * c_jinko1pcpower
+        energynorth = pcsonnorth * c_jinko1pcarea * c_solarenergyN
         st.caption("Number of panels on N: " + str(pcsonnorth)) 
       totalpcs = pcsonsouth + pcsonnorth
       totalkW = southkW + northkW
