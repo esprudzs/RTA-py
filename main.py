@@ -53,7 +53,10 @@ with col2:
 #with col3:
 #This ugly crap is not working
 #  st.text("While most buildings are not placed along lattitude or longtitude axes, choose areas angled more towards South or North.")
-  
+
+#Set up columns
+col1, col2, col3 = st.columns(3)
+
 with col1:
   totarea = st.caption("Total area: " + str(south + north) + " $$m^2$$")
   brand = st.selectbox("Specify solar panel producer", ("", "Hyndai", "JINKO"))
