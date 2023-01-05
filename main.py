@@ -91,12 +91,12 @@ with col1:
       if southarea != 0:
         pcsonsouth = southarea // _hyndai1pcarea                    #calculate how many pieces will fit in the area
         southkW = pcsonsouth * _hyndai1pcpower
-        energysouth = pcsonsouth * _hyndai1pcarea * _solarenergyS
+       # energysouth = pcsonsouth * _hyndai1pcarea * _solarenergyS
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _hyndai1pcarea
         northkW = pcsonnorth * _hyndai1pcpower
-        energynorth = pcsonnorth * _hyndai1pcarea * _solarenergyN
+     #   energynorth = pcsonnorth * _hyndai1pcarea * _solarenergyN
         st.caption("Number of panels on N: " + str(pcsonnorth))      
       totalpcs = pcsonsouth + pcsonnorth                              #add up both sides of the roof
       totalkW = southkW + northkW
@@ -104,12 +104,12 @@ with col1:
       if southarea != 0:
         pcsonsouth = southarea // _jinko1pcarea
         southkW = pcsonsouth * _jinko1pcpower
-        energysouth = pcsonsouth * _jinko1pcarea * _solarenergyS
+      #  energysouth = pcsonsouth * _jinko1pcarea * _solarenergyS
         st.caption("Number of panels on S: " + str(pcsonsouth))
       if northarea != 0:
         pcsonnorth = northarea // _jinko1pcarea
         northkW = pcsonnorth * _jinko1pcpower
-        energynorth = pcsonnorth * _jinko1pcarea * _solarenergyN
+   #     energynorth = pcsonnorth * _jinko1pcarea * _solarenergyN
         st.caption("Number of panels on N: " + str(pcsonnorth)) 
       totalpcs = pcsonsouth + pcsonnorth
       totalkW = southkW + northkW
@@ -118,7 +118,7 @@ with col1:
 
   years = st.slider("Number of years for income calculation:", 1, 10)
   
-  income = (energynorth + energysouth) * price
+ # income = (energynorth + energysouth) * price
   st.text = ("hello" + str(income))
   
 
